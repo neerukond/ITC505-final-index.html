@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lights Out</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="game-title">LIGHTS_OUT_GAME</h1>
+
+  <div class="container">
+    <div class="board" id="board"></div>
+    <div class="buttons">
+      <button onclick="newGame()">New Game</button>
+      <p>Moves: <span id="moveCount">0</span></p>
+      <p>Time: <span id="timer">0:00</span></p>
+    </div>
+  </div>
+
+  <!-- Game Logic -->
+  <script src="script.js"></script>
+  <footer>
+    <div class="addendum-link" style="text-align: "bottom-right"; margin-top: 20px;">
+      <a href="addendum.html">Addendum: Game Development Detail Description</a>
+    </div>
+<p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+  </footer>
+</body>
+</html>
+
+ 

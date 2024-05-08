@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Addendum: Lights Out Game Development</title>
+  <style>
+    /* Your additional CSS styles can go here */
+    /* Ensure the styles match the overall design of your document */
+  </style>
+<link rel="stylesheet" href="addendum.css">
+</head>
+<body>
+    <h1>Game Development Process</h1>
+
+    <h2>Initial Design and Setup</h2>
+    <h3>Objective</h3>
+    <p>The primary goal was to create a grid-based puzzle game with interactive elements (squares), a move counter, and a timer.</p>
+    <h3>Challenges</h3>
+    <p>Ensuring that the game's logic was clear and that the user interface was intuitive.</p>
+    <h3>Solution</h3>
+    <p>I used a straightforward grid layout and implemented a timer and move counter to give players immediate feedback on their progress.</p>
+
+    <h2>Implementing Game Logic</h2>
+    <h3>Objective</h3>
+    <p>The core game logic involved toggling the state of squares in response to player interactions.</p>
+    <h3>Challenges</h3>
+    <p>The main challenge was ensuring that the toggling of squares worked correctly, especially when handling edge cases (like squares on the borders of the grid).</p>
+    <h3>Solution</h3>
+    <p>I implemented the toggleSquare function to change the state of adjacent squares and included the clicked square itself in the toggle action.</p>
+
+    <h2>Time Tracking and Move Counting</h2>
+    <h3>Objective</h3>
+    <p>To track the time elapsed and the number of moves made by the player.</p>
+    <h3>Challenges</h3>
+    <p>Ensuring accuracy in the timer and synchronizing the move count with player actions.</p>
+    <h3>Solution</h3>
+    <p>I used setInterval for the timer, updating it every second, and incremented the move count every time a square was clicked.</p>
+
+    <h2>Win and Loss Conditions</h2>
+    <h3>Objective</h3>
+    <p>To establish conditions for winning and losing the game.</p>
+    <h3>Challenges</h3>
+    <p>Determining the best way to check these conditions at appropriate times.</p>
+    <h3>Solution</h3>
+    <p>I added a checkGameState function that runs after each move to determine if the player has won or reached the maximum number of moves.</p>
+
+    <h2>User Interface Feedback</h2>
+    <h3>Objective</h3>
+    <p>To provide feedback to the player upon winning or losing.</p>
+    <h3>Challenges</h3>
+    <p>Choosing an effective method to communicate the game's outcome to the player.</p>
+    <h3>Solution</h3>
+    <p>I used simple window.alert dialogs to notify players of a win or loss, which, while functional, could be improved for a better user experience.</p>
+
+    <h2>Insights Gained</h2>
+    <ul>
+        <li><strong>Modularity and Readability:</strong> Breaking down the game's functionality into smaller, clearly defined functions helped in managing complexity and making the code more readable.</li>
+        <li><strong>Testing and Edge Cases:</strong> Thorough testing was crucial, especially for edge cases such as interactions with squares on the grid's edges.</li>
+        <li><strong>User Experience:</strong> The realization that while functionality is key, the user experience is equally important. Future improvements could include better UI feedback mechanisms and considerations for accessibility.</li>
+        <li><strong>Performance Considerations:</strong> For a more complex or larger grid game, performance considerations, especially regarding DOM manipulation and state management, would be crucial.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+
+    <p>Overall, this project highlighted the importance of clear design objectives, thorough testing, and the balance between functionality and user experience. Future enhancements could include more sophisticated state management, a better UI/UX design, and perhaps more complex game mechanics to increase engagement.</p>
+	<a href="index.html">Back to Game</a>
+
+</body>
+
+</html>
